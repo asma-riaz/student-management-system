@@ -78,7 +78,7 @@ $deptStats = $conn->query(
     <!-- ---------------- DEPARTMENT BREAKDOWN ---------------- -->
     <div class="card" style="margin-top:20px;">
 
-        <h2>📚 Department Distribution</h2>
+        <h2> Department Distribution</h2>
 
         <?php if ($deptStats && $deptStats->num_rows > 0): ?>
             <table style="width:100%; margin-top:10px;">
