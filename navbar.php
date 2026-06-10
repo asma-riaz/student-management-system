@@ -9,7 +9,7 @@
 <body>
     <!-- navbar.php — Include this at the top of every page -->
 <nav class="navbar">
-    <div class="nav-brand">🎓 College DB</div>
+    <div class="nav-brand">College DB</div>
     <ul class="nav-links">
         <li><a href="display.php"  class="<?= basename($_SERVER['PHP_SELF']) === 'display.php'  ? 'active' : '' ?>"><i class="fa-solid fa-book-open"></i> View Records</a></li>
         <li><a href="insert.php"   class="<?= basename($_SERVER['PHP_SELF']) === 'insert.php'   ? 'active' : '' ?>"><i class="fa-solid fa-plus"></i> Insert</a></li>
