@@ -22,11 +22,11 @@ A full-stack web application built with **PHP**, **MySQL**, and **Vanilla CSS** 
 - Search students by name, email, or roll number
 - Department Overview page with collapsible sections per department and per semester
 - Filter bar to instantly show one department at a time
-- CGPA color coding (green / amber / red)
-- Dashboard with total students, average age, average CGPA, and department distribution
+- CGPA color coding (green /amber /red)
+- Dashboard with total students, average CGPA, and a separate card per department showing student count and average CGPA for every semester
 - Active navbar link highlighting on every page
 - Fully responsive layout (mobile friendly)
-- Prepared statements throughout — no raw SQL injection risk
+- Prepared statements throughout, so there's no raw SQL injection risk
 
 ---
 
@@ -62,6 +62,8 @@ Click **Import**, select `students.sql`, and click **Go**.
 
 This will create the `college_db` database with the `students` table and sample records.
 
+`students.sql` ships with demo data too: 2 students in every semester (1 to 8) across all 4 departments, so the Dashboard and Department Overview pages are populated right after import.
+
 ### 3. Verify connection settings
 Open `db_connect.php` and confirm these match your XAMPP setup:
 
@@ -92,7 +94,7 @@ http://localhost/student-management/dashboard.php
 
 | Page               | URL                   | Description                              |
 |--------------------|-----------------------|------------------------------------------|
-| Dashboard          | `dashboard.php`       | Key metrics and department stats         |
+| Dashboard          | `dashboard.php`       | Key metrics and per department semester breakdown |
 | View All Records   | `display.php`         | Full student table with search           |
 | Department View    | `departments.php`     | Students grouped by department/semester  |
 | Insert Student     | `insert.php`          | Add a new student                        |
